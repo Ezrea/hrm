@@ -76,11 +76,11 @@
 					</div>
 				</div>
 			</form>
-			<div class="controls">
+<%--			<div class="controls">
 				<div class="main_input_box">
 					<font color="white"><span id="nameerr">Copyright © someThing</span></font>
 				</div>
-			</div>
+			</div>--%>
 		</div>
 	</div>
 	<div id="templatemo_banner_slide" class="container_wapper">
