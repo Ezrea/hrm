@@ -35,7 +35,7 @@
 									<i class="ace-icon fa fa-times"></i>
 								</button>
 								<i class="ace-icon fa fa-check green"></i>
-								欢迎使用 FH Admin 系统&nbsp;&nbsp;
+								欢迎使用本人力资源管理系统&nbsp;&nbsp;
 							</div>
 							
 							
@@ -47,7 +47,7 @@
 						        // 指定图表的配置项和数据
 								var option = {
 						            title: {
-						                text: 'FH Admin用户统计'
+						                text: '系统目前用户统计'
 						            },
 						            tooltip: {},
 						            xAxis: {

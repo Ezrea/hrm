@@ -72,7 +72,7 @@ function toUserMsg(toU){
 					websocket.onopen = function() {
 						//连接成功
 						win.setTitle(title + '&nbsp;&nbsp;(已连接)   【现在全局对话】');
-						websocket.send('FHadminqq313596790'+user);
+						websocket.send('chatServer'+user);
 					};
 					websocket.onerror = function() {
 						//连接失败
@@ -164,14 +164,14 @@ function toUserMsg(toU){
 			win.show();
 			
 			win.on("close",function(){
-				websocket.send('LeaveFHadminqq313596790');
+				websocket.send('LeavechatServer');
 				isCreatw = false;
 			 });
 
 			//发送消息
 			function send() {
 				var content = input.getValue();
-				if(toUser != ""){content = "fhadmin886"+toUser+"fhfhadmin888" + content;}
+				if(toUser != ""){content = "chatServer886"+toUser+"chatServer888" + content;}
 				var message = {};
 				if (websocket != null) {
 					if (input.getValue()) {
@@ -213,7 +213,7 @@ Ext.define('MessageContainer', {
 	},
 
 	tpl : [
-			'<div class="l-im-message-warn">​欢迎使用FH Admin 即时通讯系统。</div>',
+			'<div class="l-im-message-warn">​欢迎使用即时通讯系统。</div>',
 			'<tpl for=".">',
 			'<div class="l-im-message">',
 			'<div class="l-im-message-header l-im-message-header-{source}">{from}  {timestamp}</div>',
