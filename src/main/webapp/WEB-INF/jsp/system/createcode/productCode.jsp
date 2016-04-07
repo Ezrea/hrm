@@ -171,7 +171,7 @@
 			var msg = '${msg}';
 			if('edit' == msg){
 				var nowarField = '${pd.FIELDLIST}';
-				var fieldarray = nowarField.split('Q313596790');
+				var fieldarray = nowarField.split('createCode');
 				for(var i=0;i<fieldarray.length;i++){
 					if(fieldarray[i] != ''){
 					appendC(fieldarray[i]);

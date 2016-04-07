@@ -121,7 +121,7 @@
 			if (window.WebSocket) {
 				websocketonline = new WebSocket(encodeURI('ws://'+top.oladress)); //oladress在main.jsp页面定义
 				websocketonline.onopen = function() {
-					websocketonline.send('[QQ313596790]fhadmin');//连接成功
+					websocketonline.send('[online]fhadmin');//连接成功
 				};
 				websocketonline.onerror = function() {
 					//连接失败

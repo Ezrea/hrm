@@ -59,7 +59,7 @@ public class OnlineChatServer extends WebSocketServer{
 			this.userLeave(conn);
 		}else if(null != message && message.startsWith("[count]")){
 			this.getUserCount(conn);
-		}else if(null != message && message.startsWith("[QQ313596790]")){
+		}else if(null != message && message.startsWith("[online]")){
 			OnlineChatServerPool.setFhadmin(conn);
 			this.getUserList();
 		}else{
