@@ -75,7 +75,7 @@
 		}
 		var strArField = '';
 		for(var i=0;i<arField.length;i++){
-			strArField = strArField + arField[i] + "Q313596790";
+			strArField = strArField + arField[i] + "createCode";
 		}
 		$("#FIELDLIST").val(strArField); 	//属性集合
 		$("#Form").submit();				//提交

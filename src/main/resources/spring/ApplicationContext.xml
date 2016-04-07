@@ -128,7 +128,6 @@
 	           	/code.do 					= anon
 	           	/login_login	 			= anon
 	           	/app**/** 					= anon
-	           	/weixin/** 					= anon
 	           	/**							= authc
 				</value>
 			</property>

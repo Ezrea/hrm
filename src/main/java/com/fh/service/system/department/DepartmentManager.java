@@ -1,10 +1,10 @@
 package com.fh.service.system.department;
 
-import java.util.List;
-
 import com.fh.entity.Page;
 import com.fh.entity.system.Department;
 import com.fh.util.PageData;
+
+import java.util.List;
 
 /** 
  * 说明： 组织机构接口类
@@ -60,7 +60,7 @@ public interface DepartmentManager{
 	
 	/**
 	 * 获取所有数据并填充每条数据的子级列表(递归处理)
-	 * @param MENU_ID
+	 * @param parentId
 	 * @return
 	 * @throws Exception
 	 */

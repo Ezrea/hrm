@@ -480,14 +480,6 @@
 			<scope>system</scope>
 			<systemPath>${project.basedir}/lib/java_websocket.jar</systemPath>
 		</dependency>
-		<!-- weixinapi -->
-		<dependency>
-			<groupId>weixinapi</groupId>
-			<artifactId>weixinapi</artifactId>
-			<version>1.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/lib/weixinapi.jar</systemPath>
-		</dependency>
 		<!-- weaver-1.6.8.RELEASE.jar -->
 		<dependency>
 			<groupId>weaver-1.6.8</groupId>
@@ -499,5 +491,15 @@
 	</dependencies>
 	<build>
 		<finalName>MVNFHM</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+		</plugins>
 	</build>
 </project>
