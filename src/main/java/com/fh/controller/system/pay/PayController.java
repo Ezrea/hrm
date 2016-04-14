@@ -106,6 +106,14 @@ public class PayController extends BaseController {
 		}
 		page.setPd(pd);
 		List<PageData>	varList = payService.list(page);	//列出Pay列表
+		//计算实际工资
+		for (PageData data : varList) {
+            int total = Integer.parseInt(String.valueOf(data.get("BASEPAY"))) + Integer.parseInt(String.valueOf(data.get("PERCENT")))+
+                    Integer.parseInt(String.valueOf(data.get("SUBSIDE")))- Integer.parseInt(String.valueOf(data.get("TAX"))) -
+                    Integer.parseInt(String.valueOf(data.get("MEDICAL"))) - Integer.parseInt(String.valueOf(data.get("SOCALE")))
+                    + Integer.parseInt(String.valueOf(data.get("REWARD")));
+            data.put("TOTAL",total);
+		}
 		mv.setViewName("system/pay/pay_list");
 		mv.addObject("varList", varList);
 		mv.addObject("pd", pd);

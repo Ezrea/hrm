@@ -76,6 +76,7 @@
 									<th class="center">个人所得税扣款</th>
 									<th class="center">医社保扣款</th>
 									<th class="center">公积金</th>
+									<th class="center">实际工资</th>
 									<th class="center">操作</th>
 								</tr>
 							</thead>
@@ -101,6 +102,7 @@
 											<td class='center'>${var.TAX}</td>
 											<td class='center'>${var.MEDICAL}</td>
 											<td class='center'>${var.SOCALE}</td>
+											<td class='center'>${var.TOTAL}</td>
 											<td class="center">
 												<c:if test="${QX.edit != 1 && QX.del != 1 }">
 												<span class="label label-large label-grey arrowed-in-right arrowed-in"><i class="ace-icon fa fa-lock" title="无权限"></i></span>
